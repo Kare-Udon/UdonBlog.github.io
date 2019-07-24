@@ -305,12 +305,17 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://jjeejj.github.io/js/gitment.js"></script>
+  <!-- Gitment评论插件通用代码 -->
+<!-- from: https://billts.site/extra_css/gitment.css -->
+<!-- from: https://billts.site/js/gitment.js -->
+
+<div id="gitment-ctn" style="margin: 50px"></div>
+<link rel="stylesheet" href="/css/extra_css/gitment.css">
+<script src="/js/gitment.js"></script>
+
 <script>
 var gitment = new Gitment({
-  id: "//blog.laoliunas.ga/2019/07/19/年轻人的第一台NAS(误) - 硬件/",
+  id: "年轻人的第一台NAS(误) - 硬件",
   owner: 'Lao-Liu233',
   repo: 'LaoLiublog.github.io',
   oauth: {
@@ -320,6 +325,7 @@ var gitment = new Gitment({
 })
 gitment.render('gitment-ctn')
 </script>
+<!-- Gitment代码结束 --> 
   
 
 
