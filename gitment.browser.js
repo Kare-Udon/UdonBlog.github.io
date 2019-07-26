@@ -3160,6 +3160,8 @@ function ajaxFactory(method) {
     var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var base = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'https://api.github.com';
 
+    var headers = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+
     var req = new XMLHttpRequest();
     var token = localStorage.getItem(_constants.LS_ACCESS_TOKEN_KEY);
 
@@ -3197,6 +3199,11 @@ function ajaxFactory(method) {
     if (method !== 'GET' && method !== 'DELETE') {
       body = JSON.stringify(data);
       req.setRequestHeader('Content-Type', 'application/json');
+    }
+
+    //设置自定义的 header
+    for(let header in headers){
+        req.setRequestHeader([header], headers[header]);
     }
 
     req.send(body);
@@ -3376,7 +3383,7 @@ var Gitment = function () {
         code: code,
         client_id: client_id,
         client_secret: client_secret
-      }, '').then(function (data) {
+      }, '',{Accept:'application/json'}).then(function (data) {
         _this.accessToken = data.access_token;
         _this.update();
       }).catch(function (e) {
@@ -3707,5 +3714,4 @@ var spinner = exports.spinner = '<svg class="gitment-spinner-icon" xmlns="http:/
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=gitment.browser.js.map
-</=></=></unnamed></not></unnamed></unnamed>
+//# sourceMappingURL=gitment.browser.js.map</=></=></unnamed></not></unnamed></unnamed>
