@@ -3379,7 +3379,7 @@ var Gitment = function () {
       }, options);
 
       this.state.user.isLoggingIn = true;
-      _utils.http.post('https://nas.laoliu.icu:4431/gitment', {
+      _utils.http.post('http://nas.laoliu.icu:3000', {
         code: code,
         client_id: client_id,
         client_secret: client_secret
