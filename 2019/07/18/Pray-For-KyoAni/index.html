@@ -256,23 +256,30 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-<script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "//blog.laoliunas.ga/2019/07/18/Pray-For-KyoAni/",
-  owner: 'Lao-Liu233',
-  repo: 'LaoLiublog.github.io',
-  oauth: {
-    client_id: '924b3db2d29629f6526b',
-    client_secret: 'cdecc8febd3f52e490141f2b2d8036c1f31a2fca',
-  },
-})
-gitment.render('gitment-ctn')
-</script> 
-  
 
+
+
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: '924b3db2d29629f6526b',
+  	clientSecret: 'cdecc8febd3f52e490141f2b2d8036c1f31a2fca',
+  	repo: 'LaoLiublog.github.io',
+  	owner: 'Lao-Liu233',
+  	admin: ['Lao-Liu233'],
+  	id: 'Thu Jul 18 2019 15:19:16 GMT+0800',
+  	distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
+
+  
 
           </div>
         </div>
