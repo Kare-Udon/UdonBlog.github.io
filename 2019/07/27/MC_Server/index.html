@@ -6,19 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="//blog.laoliunas.ga">
-  <title>Archives: 2019/7 | Lao_Liu Blog</title>
+  <title>群晖-MC基岩版服务器教程 | Lao_Liu Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Lao_Liu`s Blog.">
-<meta name="keywords" content="no">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lao_Liu Blog">
-<meta property="og:url" content="//blog.laoliunas.ga/archives/2019/07/index.html">
+  <meta name="description" content="本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。 1.Docker映像（image）的选择在尝试过5款映像后，Lao_Liu决定使用基于官方服务器端软件制作的这一款docker映像。  为什么我挑选了这款映像？  官方映像拥有所有原版特性； 官方映像更新快（docker会稍滞后）； 官方映像有完整的生物系统！（必须要提出来说）。   2.映像的">
+<meta name="keywords" content="教程,小白,群晖,Minecraft_Server,Minecraft基岩版">
+<meta property="og:type" content="article">
+<meta property="og:title" content="群晖-MC基岩版服务器教程">
+<meta property="og:url" content="//blog.laoliunas.ga/2019/07/27/MC_Server/index.html">
 <meta property="og:site_name" content="Lao_Liu Blog">
-<meta property="og:description" content="Lao_Liu`s Blog.">
+<meta property="og:description" content="本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。 1.Docker映像（image）的选择在尝试过5款映像后，Lao_Liu决定使用基于官方服务器端软件制作的这一款docker映像。  为什么我挑选了这款映像？  官方映像拥有所有原版特性； 官方映像更新快（docker会稍滞后）； 官方映像有完整的生物系统！（必须要提出来说）。   2.映像的">
 <meta property="og:locale" content="zh-hans">
+<meta property="og:image" content="//blog.laoliunas.ga/images/MC_server/1.png">
+<meta property="og:image" content="//blog.laoliunas.ga/images/MC_server/2.png">
+<meta property="og:image" content="//blog.laoliunas.ga/images/MC_server/3.png">
+<meta property="og:image" content="//blog.laoliunas.ga/images/MC_server/4.png">
+<meta property="og:updated_time" content="2019-07-27T15:47:44.757Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lao_Liu Blog">
-<meta name="twitter:description" content="Lao_Liu`s Blog.">
+<meta name="twitter:title" content="群晖-MC基岩版服务器教程">
+<meta name="twitter:description" content="本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。 1.Docker映像（image）的选择在尝试过5款映像后，Lao_Liu决定使用基于官方服务器端软件制作的这一款docker映像。  为什么我挑选了这款映像？  官方映像拥有所有原版特性； 官方映像更新快（docker会稍滞后）； 官方映像有完整的生物系统！（必须要提出来说）。   2.映像的">
+<meta name="twitter:image" content="//blog.laoliunas.ga/images/MC_server/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Lao_Liu Blog" type="application/atom+xml">
   
@@ -146,36 +152,58 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-MC_Server" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/27/MC_Server/" class="archive-article-date">
-  	<time datetime="2019-07-27T15:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/27/MC_Server/">群晖-MC基岩版服务器教程</a>
+    <h1 class="article-title" itemprop="name">
+      群晖-MC基岩版服务器教程
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/07/27/MC_Server/" class="archive-article-date">
+  	<time datetime="2019-07-27T15:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong><em>本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。</em></strong></p>
+<h4 id="1-Docker映像（image）的选择"><a href="#1-Docker映像（image）的选择" class="headerlink" title="1.Docker映像（image）的选择"></a>1.Docker映像（image）的选择</h4><p>在尝试过5款映像后，Lao_Liu决定使用基于<strong>官方服务器端软件</strong>制作的这一款docker映像。</p>
+<p><img src="/images/MC_server/1.png" alt></p>
+<p><strong>为什么我挑选了这款映像？</strong></p>
+<ul>
+<li>官方映像拥有<strong>所有原版特性</strong>；</li>
+<li>官方映像<strong>更新快</strong>（docker会稍滞后）；</li>
+<li>官方映像有<strong>完整的生物系统</strong>！（必须要提出来说）。</li>
+</ul>
+<hr>
+<h4 id="2-映像的使用"><a href="#2-映像的使用" class="headerlink" title="2.映像的使用"></a>2.映像的使用</h4><p><img src="/images/MC_server/2.png" alt></p>
+<p>在 <strong>注册表</strong> 页面下载好映像之后，你会在 <strong>映像</strong> 页面发现它。双击映像，进入开启前的设置页面。</p>
+<hr>
+<p><img src="/images/MC_server/3.png" alt></p>
+<p>（这个页面会有些许不同，“启用自动重新启动”以及接下来的设置位于 <strong>高级设置</strong> 中）</p>
+<p> 这里我勾选了“启用资源限制”来防止docker占用过多内存。但经过长时间的使用后Lao_Liu发现完全不需要有顾虑，docker最多占用500mb内存。</p>
+<p>“启用自动重新启动”可以勾选，在docker遇到问题被关闭时会自动尝试再次开启。</p>
+<hr>
+<p><img src="/images/MC_server/4.png" alt></p>
+<p>在“卷”设置中，我们选择<strong>“添加文件夹”</strong>，并在喜欢的位置新建一个文件夹来保存MC服务器的配置文件与<strong>更加重要的地图数据</strong>。</p>
+<p>然后在<strong>”装载路径“</strong>处输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/data</span><br></pre></td></tr></table></figure>
+
+<p>这样我们就将NAS上的一个文件夹装载进docker的 /data 路径下，服务器产生的数据就会保存在本地硬盘，不会因为docker的关闭而丢失（像内存断电一样），同时也方便我们进行备份。</p>
+<h4 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h4>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,116 +231,92 @@
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/19/年轻人的第一台NAS(误)-硬件/" class="archive-article-date">
-  	<time datetime="2019-07-19T01:30:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-19</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/19/年轻人的第一台NAS(误)-硬件/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">年轻人的第一台NAS(误)-硬件</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/19/年轻人的第一台NAS(误)-硬件/">年轻人的第一台NAS(误)-硬件</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">NAS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">黑群晖</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">星际蜗牛</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小白</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Docker映像（image）的选择"><span class="toc-number">1.</span> <span class="toc-text">1.Docker映像（image）的选择</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-映像的使用"><span class="toc-number">2.</span> <span class="toc-text">2.映像的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#未完待续"><span class="toc-number">3.</span> <span class="toc-text">未完待续</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/18/Pray-For-KyoAni/" class="archive-article-date">
-  	<time datetime="2019-07-18T07:19:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-18</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/18/Pray-For-KyoAni/">Pray_For_KyoAni</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">KyoAni</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
+  
+
+
+
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: '924b3db2d29629f6526b',
+  	clientSecret: 'cdecc8febd3f52e490141f2b2d8036c1f31a2fca',
+  	repo: 'LaoLiublog.github.io',
+  	owner: 'Lao-Liu233',
+  	admin: ['Lao-Liu233'],
+  	id: 'Sat Jul 27 2019 23:30:00 GMT+0800',
+  	distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
+
+  
 
           </div>
         </div>
@@ -334,8 +338,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
