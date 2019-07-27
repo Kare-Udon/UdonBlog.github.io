@@ -169,30 +169,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong><em>本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。</em></strong></p>
-<h4 id="1-Docker映像（image）的选择"><a href="#1-Docker映像（image）的选择" class="headerlink" title="1.Docker映像（image）的选择"></a>1.Docker映像（image）的选择</h4><p>在尝试过5款映像后，Lao_Liu决定使用基于<strong>官方服务器端软件</strong>制作的这一款docker映像。</p>
-<p><img src="/images/MC_server/1.png" alt></p>
-<p><strong>为什么我挑选了这款映像？</strong></p>
-<ul>
-<li>官方映像拥有<strong>所有原版特性</strong>；</li>
-<li>官方映像<strong>更新快</strong>（docker会稍滞后）；</li>
-<li>官方映像有<strong>完整的生物系统</strong>！（必须要提出来说）。</li>
-</ul>
-<hr>
-<h4 id="2-映像的使用"><a href="#2-映像的使用" class="headerlink" title="2.映像的使用"></a>2.映像的使用</h4><p><img src="/images/MC_server/2.png" alt></p>
-<p>在 <strong>注册表</strong> 页面下载好映像之后，你会在 <strong>映像</strong> 页面发现它。双击映像，进入开启前的设置页面。</p>
-<hr>
-<p><img src="/images/MC_server/3.png" alt></p>
-<p>（这个页面会有些许不同，“启用自动重新启动”以及接下来的设置位于 <strong>高级设置</strong> 中）</p>
-<p> 这里我勾选了“启用资源限制”来防止docker占用过多内存。但经过长时间的使用后Lao_Liu发现完全不需要有顾虑，docker最多占用500mb内存。</p>
-<p>“启用自动重新启动”可以勾选，在docker遇到问题被关闭时会自动尝试再次开启。</p>
-<hr>
-<p><img src="/images/MC_server/4.png" alt></p>
-<p>在“卷”设置中，我们选择<strong>“添加文件夹”</strong>，并在喜欢的位置新建一个文件夹来保存MC服务器的配置文件与<strong>更加重要的地图数据</strong>。</p>
-<p>然后在<strong>”装载路径“</strong>处输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/data</span><br></pre></td></tr></table></figure>
-
-<p>这样我们就将NAS上的一个文件夹装载进docker的 /data 路径下，服务器产生的数据就会保存在本地硬盘，不会因为docker的关闭而丢失（像内存断电一样），同时也方便我们进行备份。</p>
-<h4 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h4>
+        
+          <a class="article-more-a" href="/2019/07/27/MC_Server/#more">more >></a>
+        
       
 
       
@@ -311,50 +290,9 @@ gitalk.render('gitalk-container')
 <li>想拥有一台个人服务器。</li>
 <li>想……</li>
 </ul>
-<p><strong>如何拥有一台NAS?</strong></p>
-<p>很简单。你需要钱和钱和钱。</p>
-<p><del>化身神乐mea</del>。</p>
-<hr>
-<p>下面进入正题。</p>
-<h4 id="家庭NAS的硬件选购-我的个人经验"><a href="#家庭NAS的硬件选购-我的个人经验" class="headerlink" title="家庭NAS的硬件选购(我的个人经验)"></a>家庭NAS的硬件选购(我的个人经验)</h4><p><del>我是一个抠门的人</del>，所以我会尽可能选择性价比高的硬件和功能实现方案。</p>
-<p><strong>为什么要自己组装，不购买星际蜗牛的现成主机?</strong></p>
-<p>据反馈，星际蜗牛主机有以下几个诟病。</p>
-<ul>
-<li>杂牌电源输出电流不稳定，可能导致硬盘寿命减短/意外损坏。</li>
-<li>电源散热风扇和机箱散热风扇声音大。</li>
-<li>自带4G内存条和16G硬盘都是杂牌货，听说SSD没有USB2.0快。</li>
-</ul>
-<hr>
-<p>以下是我挑选出的硬件。</p>
-<p><strong>· 星际蜗牛机箱</strong></p>
-<p>还有人记得去年的矿难吗，机箱就是当时剩下的……机箱成色不一，但NAS是拿来用的，不是拿来看的所以无所谓。价格在30-50不等。BUT运费可贵了，毕竟C款机箱有近3kg重。</p>
-<p><strong>· J1900主板</strong></p>
-<p>Intel 赛扬 J1900  四核四线程 主频:2GHz。</p>
-<p>为了降低价格，我选择了一款仅支持于板上USB或MSATA引导系统启动的主板，约120元。</p>
-<p><strong>· 一款质量好的U2mini型号电源</strong></p>
-<p>不管在哪里都会听人念叨电源一定要选好，不然会烧硬盘。我选了一款100元的电源，散热风扇没有任何声音。</p>
-<p><strong>其他配件</strong></p>
-<ul>
-<li>16G MSATA SSD 硬盘 50元。</li>
-<li>8G DDR3(主板仅支持DDR3 1440)1600内存条 120元 <del>(灵车条)</del>。</li>
-<li>静音散热风扇 10元。</li>
-<li>一块(N块)心仪的硬盘。我选择了希捷酷鱼系列。</li>
-</ul>
-<p>整套硬件(除硬盘外)在500元左右。相比于二盘位群晖1k+，这台四盘位缝合怪的性价比是真的高。</p>
-<p><strong>安装硬件?</strong></p>
-<p>超级简单，绝对不需要我提。</p>
-<hr>
-<h4 id="系统选择"><a href="#系统选择" class="headerlink" title="系统选择"></a>系统选择</h4><p>我毫不犹豫地选择了黑群晖。这是她的优点：</p>
-<ul>
-<li>系统稳定。</li>
-<li>官方提供功能完全，社区强大。NAS约等于一台服务器。</li>
-<li>支持docker！！！！(非常强大的功能)</li>
-</ul>
-<p><strong>系统安装</strong></p>
-<p>网上关于黑群晖安装的教程已经饱和了，我就不再赘述。</p>
-<hr>
-<p>以上就是我在装配家庭NAS时的心得，希望能帮到迷惑的你。</p>
-
+        
+          <a class="article-more-a" href="/2019/07/19/年轻人的第一台NAS(误)-硬件/#more">more >></a>
+        
       
 
       

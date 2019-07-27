@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="//blog.laoliunas.ga/"/>
-  <updated>2019-07-27T15:47:44.757Z</updated>
+  <updated>2019-07-27T15:57:53.075Z</updated>
   <id>//blog.laoliunas.ga/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="//blog.laoliunas.ga/2019/07/27/MC_Server/"/>
     <id>//blog.laoliunas.ga/2019/07/27/MC_Server/</id>
     <published>2019-07-27T15:30:00.000Z</published>
-    <updated>2019-07-27T15:47:44.757Z</updated>
+    <updated>2019-07-27T15:57:53.075Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      &lt;p&gt;&lt;strong&gt;&lt;em&gt;本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
     
     </summary>
     
@@ -53,17 +47,17 @@
     <link href="//blog.laoliunas.ga/2019/07/19/%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E5%8F%B0NAS(%E8%AF%AF)-%E7%A1%AC%E4%BB%B6/"/>
     <id>//blog.laoliunas.ga/2019/07/19/年轻人的第一台NAS(误)-硬件/</id>
     <published>2019-07-19T01:30:46.000Z</published>
-    <updated>2019-07-27T15:31:16.653Z</updated>
+    <updated>2019-07-27T15:57:09.316Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      &lt;h4 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;为什么我需要一台NAS?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拓展电脑/手机的储存空间。&lt;/li&gt;
+&lt;li&gt;内网网速远大于外网网速，想体验1000mbps的高速传输。&lt;/li&gt;
+&lt;li&gt;想拥有一台个人服务器。&lt;/li&gt;
+&lt;li&gt;想……&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
