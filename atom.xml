@@ -5,9 +5,9 @@
   <subtitle>A place to say something.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="//blog.laoliunas.ga/"/>
+  <link href="//blog.laoliu.icu/"/>
   <updated>2019-07-29T15:26:00.129Z</updated>
-  <id>//blog.laoliunas.ga/</id>
+  <id>//blog.laoliu.icu/</id>
   
   <author>
     <name>Lao_Liu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>群晖-MC基岩版服务器教程</title>
-    <link href="//blog.laoliunas.ga/2019/07/27/MC_Server/"/>
-    <id>//blog.laoliunas.ga/2019/07/27/MC_Server/</id>
+    <link href="//blog.laoliu.icu/2019/07/27/MC_Server/"/>
+    <id>//blog.laoliu.icu/2019/07/27/MC_Server/</id>
     <published>2019-07-27T15:30:00.000Z</published>
     <updated>2019-07-29T15:26:00.129Z</updated>
     
@@ -30,22 +30,22 @@
     </summary>
     
     
-      <category term="教程" scheme="//blog.laoliunas.ga/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="//blog.laoliu.icu/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="群晖" scheme="//blog.laoliunas.ga/tags/%E7%BE%A4%E6%99%96/"/>
+      <category term="群晖" scheme="//blog.laoliu.icu/tags/%E7%BE%A4%E6%99%96/"/>
     
-      <category term="小白" scheme="//blog.laoliunas.ga/tags/%E5%B0%8F%E7%99%BD/"/>
+      <category term="小白" scheme="//blog.laoliu.icu/tags/%E5%B0%8F%E7%99%BD/"/>
     
-      <category term="Minecraft_Server" scheme="//blog.laoliunas.ga/tags/Minecraft-Server/"/>
+      <category term="Minecraft_Server" scheme="//blog.laoliu.icu/tags/Minecraft-Server/"/>
     
-      <category term="Minecraft基岩版" scheme="//blog.laoliunas.ga/tags/Minecraft%E5%9F%BA%E5%B2%A9%E7%89%88/"/>
+      <category term="Minecraft基岩版" scheme="//blog.laoliu.icu/tags/Minecraft%E5%9F%BA%E5%B2%A9%E7%89%88/"/>
     
   </entry>
   
   <entry>
     <title>年轻人的第一台NAS(误)-硬件</title>
-    <link href="//blog.laoliunas.ga/2019/07/19/%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E7%AC%AC%E4%B8%80%E5%8F%B0NAS(%E8%AF%AF)-%E7%A1%AC%E4%BB%B6/"/>
-    <id>//blog.laoliunas.ga/2019/07/19/年轻人的第一台NAS(误)-硬件/</id>
+    <link href="//blog.laoliu.icu/2019/07/19/NAS_hardware/"/>
+    <id>//blog.laoliu.icu/2019/07/19/NAS_hardware/</id>
     <published>2019-07-19T01:30:46.000Z</published>
     <updated>2019-07-27T15:57:09.316Z</updated>
     
@@ -62,22 +62,22 @@
     </summary>
     
     
-      <category term="教程" scheme="//blog.laoliunas.ga/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="//blog.laoliu.icu/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="小白" scheme="//blog.laoliunas.ga/tags/%E5%B0%8F%E7%99%BD/"/>
+      <category term="小白" scheme="//blog.laoliu.icu/tags/%E5%B0%8F%E7%99%BD/"/>
     
-      <category term="NAS" scheme="//blog.laoliunas.ga/tags/NAS/"/>
+      <category term="NAS" scheme="//blog.laoliu.icu/tags/NAS/"/>
     
-      <category term="黑群晖" scheme="//blog.laoliunas.ga/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
+      <category term="黑群晖" scheme="//blog.laoliu.icu/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
     
-      <category term="星际蜗牛" scheme="//blog.laoliunas.ga/tags/%E6%98%9F%E9%99%85%E8%9C%97%E7%89%9B/"/>
+      <category term="星际蜗牛" scheme="//blog.laoliu.icu/tags/%E6%98%9F%E9%99%85%E8%9C%97%E7%89%9B/"/>
     
   </entry>
   
   <entry>
     <title>Pray_For_KyoAni</title>
-    <link href="//blog.laoliunas.ga/2019/07/18/Pray-For-KyoAni/"/>
-    <id>//blog.laoliunas.ga/2019/07/18/Pray-For-KyoAni/</id>
+    <link href="//blog.laoliu.icu/2019/07/18/Pray-For-KyoAni/"/>
+    <id>//blog.laoliu.icu/2019/07/18/Pray-For-KyoAni/</id>
     <published>2019-07-18T07:19:16.000Z</published>
     <updated>2019-07-24T15:54:30.321Z</updated>
     
@@ -94,9 +94,9 @@
     </summary>
     
     
-      <category term="随笔" scheme="//blog.laoliunas.ga/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="//blog.laoliu.icu/tags/%E9%9A%8F%E7%AC%94/"/>
     
-      <category term="KyoAni" scheme="//blog.laoliunas.ga/tags/KyoAni/"/>
+      <category term="KyoAni" scheme="//blog.laoliu.icu/tags/KyoAni/"/>
     
   </entry>
   
