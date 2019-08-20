@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.laoliu.icu/"/>
-  <updated>2019-08-20T05:34:04.504Z</updated>
+  <updated>2019-08-20T05:39:07.845Z</updated>
   <id>https://blog.laoliu.icu/</id>
   
   <author>
@@ -21,13 +21,11 @@
     <link href="https://blog.laoliu.icu/2019/08/20/Synology_Intranet_penetration_Zerotier/"/>
     <id>https://blog.laoliu.icu/2019/08/20/Synology_Intranet_penetration_Zerotier/</id>
     <published>2019-08-20T04:00:00.000Z</published>
-    <updated>2019-08-20T05:34:04.504Z</updated>
+    <updated>2019-08-20T05:39:07.845Z</updated>
     
     <summary type="html">
     
-      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;298&quot; height=&quot;52&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=468490564&amp;auto=0&amp;height=32&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;说在前面：有一个月没更新文章了。今后尽量做到1-2周更一篇吧。Goo酱终于把我的Blog收录了（其实是我主动提交的），这些教程也能被大家看到啦！有任何问题可以在文章结尾的Gitalk处留言，我会尽快回复的！&lt;/p&gt;
+      &lt;p&gt;说在前面：有一个月没更新文章了。今后尽量做到1-2周更一篇吧。Goo酱终于把我的Blog收录了（其实是我主动提交的），这些教程也能被大家看到啦！有任何问题可以在文章结尾的Gitalk处留言，我会尽快回复的！&lt;/p&gt;
 &lt;p&gt;这篇教程无图，省流。(其实经过Gzip压缩后已经能省80%的数据量，我也被惊到了)&lt;/p&gt;
     
     </summary>
@@ -59,9 +57,9 @@
     
       <category term="教程" scheme="https://blog.laoliu.icu/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="小白" scheme="https://blog.laoliu.icu/tags/%E5%B0%8F%E7%99%BD/"/>
-    
       <category term="群晖" scheme="https://blog.laoliu.icu/tags/%E7%BE%A4%E6%99%96/"/>
+    
+      <category term="小白" scheme="https://blog.laoliu.icu/tags/%E5%B0%8F%E7%99%BD/"/>
     
       <category term="Minecraft_Server" scheme="https://blog.laoliu.icu/tags/Minecraft-Server/"/>
     
@@ -91,13 +89,13 @@
     
       <category term="教程" scheme="https://blog.laoliu.icu/tags/%E6%95%99%E7%A8%8B/"/>
     
+      <category term="小白" scheme="https://blog.laoliu.icu/tags/%E5%B0%8F%E7%99%BD/"/>
+    
       <category term="NAS" scheme="https://blog.laoliu.icu/tags/NAS/"/>
     
       <category term="黑群晖" scheme="https://blog.laoliu.icu/tags/%E9%BB%91%E7%BE%A4%E6%99%96/"/>
     
       <category term="星际蜗牛" scheme="https://blog.laoliu.icu/tags/%E6%98%9F%E9%99%85%E8%9C%97%E7%89%9B/"/>
-    
-      <category term="小白" scheme="https://blog.laoliu.icu/tags/%E5%B0%8F%E7%99%BD/"/>
     
   </entry>
   
