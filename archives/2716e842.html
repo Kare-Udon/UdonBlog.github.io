@@ -6,20 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://blog.laoliu.icu">
-  <title>年轻人的第一台NAS(误)-硬件 | Lao_Liu Blog</title>
+  <title>群晖-MC基岩版服务器教程 | Lao_Liu Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="引言为什么我需要一台NAS?  拓展电脑/手机的储存空间。 内网网速远大于外网网速，想体验1000mbps的高速传输。 想拥有一台个人服务器。 想……">
-<meta name="keywords" content="教程,小白,NAS,黑群晖,星际蜗牛">
+  <meta name="description" content="本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。">
+<meta name="keywords" content="教程,群晖,小白,Minecraft_Server,Minecraft基岩版">
 <meta property="og:type" content="article">
-<meta property="og:title" content="年轻人的第一台NAS(误)-硬件">
-<meta property="og:url" content="https://blog.laoliu.icu/2019/07/19/NAS_hardware/index.html">
+<meta property="og:title" content="群晖-MC基岩版服务器教程">
+<meta property="og:url" content="https://blog.laoliu.icu/archives/2716e842.html">
 <meta property="og:site_name" content="Lao_Liu Blog">
-<meta property="og:description" content="引言为什么我需要一台NAS?  拓展电脑/手机的储存空间。 内网网速远大于外网网速，想体验1000mbps的高速传输。 想拥有一台个人服务器。 想……">
+<meta property="og:description" content="本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:updated_time" content="2019-07-27T15:57:09.316Z">
+<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/1.png">
+<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/2.png">
+<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/3.png">
+<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/4.png">
+<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/5.png">
+<meta property="og:updated_time" content="2019-07-29T15:26:00.129Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="年轻人的第一台NAS(误)-硬件">
-<meta name="twitter:description" content="引言为什么我需要一台NAS?  拓展电脑/手机的储存空间。 内网网速远大于外网网速，想体验1000mbps的高速传输。 想拥有一台个人服务器。 想……">
+<meta name="twitter:title" content="群晖-MC基岩版服务器教程">
+<meta name="twitter:description" content="本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。">
+<meta name="twitter:image" content="https://blog.laoliu.icu/images/MC_server/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Lao_Liu Blog" type="application/atom+xml">
   
@@ -62,6 +68,8 @@
 			
 				<li><a href="/">主页</a></li>
 	        
+				<li><a href="/tags/教程/">教程</a></li>
+	        
 				<li><a href="/tags/随笔/">随笔</a></li>
 	        
 			</ul>
@@ -82,7 +90,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="https://github.com/Lao-Liu233" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/Lao-Liu233" title="github" rel="external nofollow noopener noreferrer"><i class="icon-github"></i></a>
 		        
 					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 		        
@@ -116,12 +124,14 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/Lao-Liu233" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/Lao-Liu233" title="github" rel="external nofollow noopener noreferrer"><i class="icon-github"></i></a>
 			        
 						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 			        
@@ -129,12 +139,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/教程/">教程</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/随笔/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -146,81 +158,61 @@
       <div id="wrapper" class="body-wrap">
         <div class="menu-l">
           <div class="canvas-wrap">
-            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+            <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-NAS_hardware" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MC_Server" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      年轻人的第一台NAS(误)-硬件
+      群晖-MC基岩版服务器教程
     </h1>
   
 
         
-        <a href="/2019/07/19/NAS_hardware/" class="archive-article-date">
-  	<time datetime="2019-07-19T01:30:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-19</time>
+        <a href="/archives/2716e842.html" class="archive-article-date">
+  	<time datetime="2019-07-27T15:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h4><p><strong>为什么我需要一台NAS?</strong></p>
-<ul>
-<li>拓展电脑/手机的储存空间。</li>
-<li>内网网速远大于外网网速，想体验1000mbps的高速传输。</li>
-<li>想拥有一台个人服务器。</li>
-<li>想……</li>
-</ul>
+        <p><strong><em>本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。</em></strong></p>
 <a id="more"></a>
 
-<p><strong>如何拥有一台NAS?</strong></p>
-<p>很简单。你需要钱和钱和钱。</p>
-<p><del>化身神乐mea</del>。</p>
-<hr>
-<p>下面进入正题。</p>
-<h4 id="家庭NAS的硬件选购-我的个人经验"><a href="#家庭NAS的硬件选购-我的个人经验" class="headerlink" title="家庭NAS的硬件选购(我的个人经验)"></a>家庭NAS的硬件选购(我的个人经验)</h4><p><del>我是一个抠门的人</del>，所以我会尽可能选择性价比高的硬件和功能实现方案。</p>
-<p><strong>为什么要自己组装，不购买星际蜗牛的现成主机?</strong></p>
-<p>据反馈，星际蜗牛主机有以下几个诟病。</p>
+<h4 id="1-Docker映像（image）的选择"><a href="#1-Docker映像（image）的选择" class="headerlink" title="1.Docker映像（image）的选择"></a>1.Docker映像（image）的选择</h4><p>在尝试过5款映像后，Lao_Liu决定使用基于<strong>官方服务器端软件</strong>制作的这一款docker映像。</p>
+<p><a href="https://hub.docker.com/r/toasterlint/minecraft_bedrock/" rel="external nofollow noopener noreferrer" target="_blank">toasterlint-minecraft_bedrock</a></p>
+<p><img src="/images/MC_server/1.png" alt></p>
+<p><strong>为什么我挑选了这款映像？</strong></p>
 <ul>
-<li>杂牌电源输出电流不稳定，可能导致硬盘寿命减短/意外损坏。</li>
-<li>电源散热风扇和机箱散热风扇声音大。</li>
-<li>自带4G内存条和16G硬盘都是杂牌货，听说SSD没有USB2.0快。</li>
+<li>官方映像拥有<strong>所有原版特性</strong>；</li>
+<li>官方映像<strong>更新快</strong>（docker会稍滞后）；</li>
+<li>官方映像有<strong>完整的生物系统</strong>！（必须要提出来说）。</li>
 </ul>
 <hr>
-<p>以下是我挑选出的硬件。</p>
-<p><strong>· 星际蜗牛机箱</strong></p>
-<p>还有人记得去年的矿难吗，机箱就是当时剩下的……机箱成色不一，但NAS是拿来用的，不是拿来看的所以无所谓。价格在30-50不等。BUT运费可贵了，毕竟C款机箱有近3kg重。</p>
-<p><strong>· J1900主板</strong></p>
-<p>Intel 赛扬 J1900  四核四线程 主频:2GHz。</p>
-<p>为了降低价格，我选择了一款仅支持于板上USB或MSATA引导系统启动的主板，约120元。</p>
-<p><strong>· 一款质量好的U2mini型号电源</strong></p>
-<p>不管在哪里都会听人念叨电源一定要选好，不然会烧硬盘。我选了一款100元的电源，散热风扇没有任何声音。</p>
-<p><strong>其他配件</strong></p>
-<ul>
-<li>16G MSATA SSD 硬盘 50元。</li>
-<li>8G DDR3(主板仅支持DDR3 1440)1600内存条 120元 <del>(灵车条)</del>。</li>
-<li>静音散热风扇 10元。</li>
-<li>一块(N块)心仪的硬盘。我选择了希捷酷鱼系列。</li>
-</ul>
-<p>整套硬件(除硬盘外)在500元左右。相比于二盘位群晖1k+，这台四盘位缝合怪的性价比是真的高。</p>
-<p><strong>安装硬件?</strong></p>
-<p>超级简单，绝对不需要我提。</p>
+<h4 id="2-映像的使用"><a href="#2-映像的使用" class="headerlink" title="2.映像的使用"></a>2.映像的使用</h4><p><img src="/images/MC_server/2.png" alt></p>
+<p>在 <strong>注册表</strong> 页面下载好映像之后，你会在 <strong>映像</strong> 页面发现它。双击映像，进入开启前的设置页面。</p>
 <hr>
-<h4 id="系统选择"><a href="#系统选择" class="headerlink" title="系统选择"></a>系统选择</h4><p>我毫不犹豫地选择了黑群晖。这是她的优点：</p>
-<ul>
-<li>系统稳定。</li>
-<li>官方提供功能完全，社区强大。NAS约等于一台服务器。</li>
-<li>支持docker！！！！(非常强大的功能)</li>
-</ul>
-<p><strong>系统安装</strong></p>
-<p>网上关于黑群晖安装的教程已经饱和了，我就不再赘述。</p>
+<p><img src="/images/MC_server/3.png" alt></p>
+<p>（这个页面会有些许不同，“启用自动重新启动”以及接下来的设置位于 <strong>高级设置</strong> 中）</p>
+<p> 这里我勾选了“启用资源限制”来防止docker占用过多内存。但经过长时间的使用后Lao_Liu发现完全不需要有顾虑，这个docker最多占用500mb内存。</p>
+<p>“启用自动重新启动”可以勾选，在docker遇到问题被关闭时会自动尝试再次开启。</p>
 <hr>
-<p>以上就是我在装配家庭NAS时的心得，希望能帮到迷惑的你。</p>
+<p><img src="/images/MC_server/4.png" alt></p>
+<p>在“卷”设置中，我们选择<strong>“添加文件夹”</strong>，并在喜欢的位置新建一个文件夹来保存MC服务器的配置文件与<strong>更加重要的地图数据</strong>。</p>
+<p>然后在<strong>”装载路径“</strong>处输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/data</span><br></pre></td></tr></table></figure>
+
+<p>这样我们就将NAS上的一个文件夹装载进docker的 /data 路径下，服务器产生的数据就会保存在本地硬盘，不会因为docker的关闭而丢失（像内存断电一样），同时也方便我们进行备份。</p>
+<hr>
+<p><img src="/images/MC_server/5.png" alt></p>
+<p>在“端口设置”中，按照图中所示<strong>添加19132端口的TCP与UDP通道</strong>。在路由器处配置<strong>19132的端口转发</strong>（记得要同时转发TCP和UDP哦，游戏通讯是有用到UDP的），就能在外网访问MC服务器了。</p>
+<hr>
+<p>以上就是使用群晖搭建MC基岩版服务器的教程。很简单吧）</p>
 
       
 
@@ -238,19 +230,19 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">群晖</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">小白</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">NAS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Minecraft_Server</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">黑群晖</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">星际蜗牛</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Minecraft基岩版</a>
         		</li>
       		
 		</ul>
@@ -269,18 +261,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/27/MC_Server/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/archives/8776c6d2.html" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          群晖-MC基岩版服务器教程
+          群晖-外网访问一站式教程1 Zerotier
         
       </div>
     </a>
   
   
-    <a href="/2019/07/18/Pray-For-KyoAni/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Pray_For_KyoAni</div>
+    <a href="/archives/757c72a1.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">年轻人的第一台NAS(误)-硬件</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -307,7 +299,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#引言"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#家庭NAS的硬件选购-我的个人经验"><span class="toc-number">2.</span> <span class="toc-text">家庭NAS的硬件选购(我的个人经验)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#系统选择"><span class="toc-number">3.</span> <span class="toc-text">系统选择</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Docker映像（image）的选择"><span class="toc-number">1.</span> <span class="toc-text">1.Docker映像（image）的选择</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-映像的使用"><span class="toc-number">2.</span> <span class="toc-text">2.映像的使用</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -343,7 +335,7 @@ if(true){
   	repo: 'LaoLiublog.github.io',
   	owner: 'Lao-Liu233',
   	admin: ['Lao-Liu233'],
-  	id: 'Fri Jul 19 2019 09:30:46 GMT+0800',
+  	id: 'Sat Jul 27 2019 23:30:00 GMT+0800',
   	distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
@@ -351,6 +343,16 @@ gitalk.render('gitalk-container')
 </script>
 
   
+
+  <!--显示阅读次数-->
+
+  <br>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
 
           </div>
         </div>
@@ -362,7 +364,7 @@ gitalk.render('gitalk-container')
     		&copy; 2019 Lao_Liu
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      		<a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external nofollow noopener noreferrer">Yilia</a> by Litten
       	</div>
     </div>
   </div>
@@ -390,6 +392,8 @@ if(!isFinite(o.call(this)))throw RangeError("Invalid time value");var t=this,n=t
 return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var e=r(54),i=r(2),o=e.get,u=e.key;e.exp({getOwnMetadata:function(t,n){return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){var e=r(54),i=r(2),o=r(32),u=e.has,c=e.key,f=function(t,n,r){if(u(t,n,r))return!0;var e=o(n);return null!==e&&f(t,e,r)};e.exp({hasMetadata:function(t,n){return f(t,i(n),arguments.length<3?void 0:c(arguments[2]))}})},function(t,n,r){var e=r(54),i=r(2),o=e.has,u=e.key;e.exp({hasOwnMetadata:function(t,n){return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){var e=r(54),i=r(2),o=r(26),u=e.key,c=e.set;e.exp({metadata:function(t,n){return function(r,e){c(t,n,(void 0!==e?i:o)(r),u(e))}}})},function(t,n,r){var e=r(1);e(e.P+e.R,"Set",{toJSON:r(165)("Set")})},function(t,n,r){"use strict";var e=r(1),i=r(147)(!0);e(e.P,"String",{at:function(t){return i(this,t)}})},function(t,n,r){"use strict";var e=r(1),i=r(46),o=r(16),u=r(122),c=r(120),f=RegExp.prototype,a=function(t,n){this._r=t,this._s=n};r(139)(a,"RegExp String",function(){var t=this._r.exec(this._s);return{value:t,done:null===t}}),e(e.P,"String",{matchAll:function(t){if(i(this),!u(t))throw TypeError(t+" is not a regexp!");var n=String(this),r="flags"in f?String(t.flags):c.call(t),e=new RegExp(t.source,~r.indexOf("g")?r:"g"+r);return e.lastIndex=o(t.lastIndex),new a(e,n)}})},function(t,n,r){"use strict";var e=r(1),i=r(181);e(e.P,"String",{padEnd:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0,!1)}})},function(t,n,r){"use strict";var e=r(1),i=r(181);e(e.P,"String",{padStart:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0,!0)}})},function(t,n,r){"use strict";r(82)("trimLeft",function(t){return function(){return t(this,1)}},"trimStart")},function(t,n,r){"use strict";r(82)("trimRight",function(t){return function(){return t(this,2)}},"trimEnd")},function(t,n,r){r(153)("asyncIterator")},function(t,n,r){r(153)("observable")},function(t,n,r){var e=r(1);e(e.S,"System",{global:r(3)})},function(t,n,r){for(var e=r(155),i=r(28),o=r(3),u=r(27),c=r(80),f=r(7),a=f("iterator"),s=f("toStringTag"),l=c.Array,h=["NodeList","DOMTokenList","MediaList","StyleSheetList","CSSRuleList"],v=0;v<5;v++){var p,d=h[v],y=o[d],g=y&&y.prototype;if(g){g[a]||u(g,a,l),g[s]||u(g,s,d),c[d]=l;for(p in e)g[p]||i(g,p,e[p],!0)}}},function(t,n,r){var e=r(1),i=r(151);e(e.G+e.B,{setImmediate:i.set,clearImmediate:i.clear})},function(t,n,r){var e=r(3),i=r(1),o=r(121),u=r(207),c=e.navigator,f=!!c&&/MSIE .\./.test(c.userAgent),a=function(t){return f?function(n,r){return t(o(u,[].slice.call(arguments,2),"function"==typeof n?n:Function(n)),r)}:t};i(i.G+i.B+i.F*f,{setTimeout:a(e.setTimeout),setInterval:a(e.setInterval)})},function(t,n,r){r(330),r(269),r(271),r(270),r(273),r(275),r(280),r(274),r(272),r(282),r(281),r(277),r(278),r(276),r(268),r(279),r(283),r(284),r(236),r(238),r(237),r(286),r(285),r(256),r(266),r(267),r(257),r(258),r(259),r(260),r(261),r(262),r(263),r(264),r(265),r(239),r(240),r(241),r(242),r(243),r(244),r(245),r(246),r(247),r(248),r(249),r(250),r(251),r(252),r(253),r(254),r(255),r(317),r(322),r(329),r(320),r(312),r(313),r(318),r(323),r(325),r(308),r(309),r(310),r(311),r(314),r(315),r(316),r(319),r(321),r(324),r(326),r(327),r(328),r(231),r(233),r(232),r(235),r(234),r(220),r(218),r(224),r(221),r(227),r(229),r(217),r(223),r(214),r(228),r(212),r(226),r(225),r(219),r(222),r(211),r(213),r(216),r(215),r(230),r(155),r(302),r(307),r(184),r(303),r(304),r(305),r(306),r(287),r(183),r(185),r(186),r(342),r(331),r(332),r(337),r(340),r(341),r(335),r(338),r(336),r(339),r(333),r(334),r(288),r(289),r(290),r(291),r(292),r(295),r(293),r(294),r(296),r(297),r(298),r(299),r(301),r(300),r(343),r(369),r(372),r(371),r(373),r(374),r(370),r(375),r(376),r(354),r(357),r(353),r(351),r(352),r(355),r(356),r(346),r(368),r(377),r(345),r(347),r(349),r(348),r(350),r(359),r(360),r(362),r(361),r(364),r(363),r(365),r(366),r(367),r(344),r(358),r(380),r(379),r(378),t.exports=r(52)},function(t,n){function r(t,n){if("string"==typeof n)return t.insertAdjacentHTML("afterend",n);var r=t.nextSibling;return r?t.parentNode.insertBefore(n,r):t.parentNode.appendChild(n)}t.exports=r},,,,,,,,,function(t,n,r){(function(n,r){!function(n){"use strict";function e(t,n,r,e){var i=n&&n.prototype instanceof o?n:o,u=Object.create(i.prototype),c=new p(e||[]);return u._invoke=s(t,r,c),u}function i(t,n,r){try{return{type:"normal",arg:t.call(n,r)}}catch(t){return{type:"throw",arg:t}}}function o(){}function u(){}function c(){}function f(t){["next","throw","return"].forEach(function(n){t[n]=function(t){return this._invoke(n,t)}})}function a(t){function n(r,e,o,u){var c=i(t[r],t,e);if("throw"!==c.type){var f=c.arg,a=f.value;return a&&"object"==typeof a&&m.call(a,"__await")?Promise.resolve(a.__await).then(function(t){n("next",t,o,u)},function(t){n("throw",t,o,u)}):Promise.resolve(a).then(function(t){f.value=t,o(f)},u)}u(c.arg)}function e(t,r){function e(){return new Promise(function(e,i){n(t,r,e,i)})}return o=o?o.then(e,e):e()}"object"==typeof r&&r.domain&&(n=r.domain.bind(n));var o;this._invoke=e}function s(t,n,r){var e=P;return function(o,u){if(e===F)throw new Error("Generator is already running");if(e===M){if("throw"===o)throw u;return y()}for(r.method=o,r.arg=u;;){var c=r.delegate;if(c){var f=l(c,r);if(f){if(f===A)continue;return f}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if(e===P)throw e=M,r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);e=F;var a=i(t,n,r);if("normal"===a.type){if(e=r.done?M:j,a.arg===A)continue;return{value:a.arg,done:r.done}}"throw"===a.type&&(e=M,r.method="throw",r.arg=a.arg)}}}function l(t,n){var r=t.iterator[n.method];if(r===g){if(n.delegate=null,"throw"===n.method){if(t.iterator.return&&(n.method="return",n.arg=g,l(t,n),"throw"===n.method))return A;n.method="throw",n.arg=new TypeError("The iterator does not provide a 'throw' method")}return A}var e=i(r,t.iterator,n.arg);if("throw"===e.type)return n.method="throw",n.arg=e.arg,n.delegate=null,A;var o=e.arg;return o?o.done?(n[t.resultName]=o.value,n.next=t.nextLoc,"return"!==n.method&&(n.method="next",n.arg=g),n.delegate=null,A):o:(n.method="throw",n.arg=new TypeError("iterator result is not an object"),n.delegate=null,A)}function h(t){var n={tryLoc:t[0]};1 in t&&(n.catchLoc=t[1]),2 in t&&(n.finallyLoc=t[2],n.afterLoc=t[3]),this.tryEntries.push(n)}function v(t){var n=t.completion||{};n.type="normal",delete n.arg,t.completion=n}function p(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(h,this),this.reset(!0)}function d(t){if(t){var n=t[w];if(n)return n.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,e=function n(){for(;++r<t.length;)if(m.call(t,r))return n.value=t[r],n.done=!1,n;return n.value=g,n.done=!0,n};return e.next=e}}return{next:y}}function y(){return{value:g,done:!0}}var g,b=Object.prototype,m=b.hasOwnProperty,x="function"==typeof Symbol?Symbol:{},w=x.iterator||"@@iterator",S=x.asyncIterator||"@@asyncIterator",_=x.toStringTag||"@@toStringTag",O="object"==typeof t,E=n.regeneratorRuntime;if(E)return void(O&&(t.exports=E));E=n.regeneratorRuntime=O?t.exports:{},E.wrap=e;var P="suspendedStart",j="suspendedYield",F="executing",M="completed",A={},N={};N[w]=function(){return this};var T=Object.getPrototypeOf,I=T&&T(T(d([])));I&&I!==b&&m.call(I,w)&&(N=I);var k=c.prototype=o.prototype=Object.create(N);u.prototype=k.constructor=c,c.constructor=u,c[_]=u.displayName="GeneratorFunction",E.isGeneratorFunction=function(t){var n="function"==typeof t&&t.constructor;return!!n&&(n===u||"GeneratorFunction"===(n.displayName||n.name))},E.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,c):(t.__proto__=c,_ in t||(t[_]="GeneratorFunction")),t.prototype=Object.create(k),t},E.awrap=function(t){return{__await:t}},f(a.prototype),a.prototype[S]=function(){return this},E.AsyncIterator=a,E.async=function(t,n,r,i){var o=new a(e(t,n,r,i));return E.isGeneratorFunction(n)?o:o.next().then(function(t){return t.done?t.value:o.next()})},f(k),k[_]="Generator",k.toString=function(){return"[object Generator]"},E.keys=function(t){var n=[];for(var r in t)n.push(r);return n.reverse(),function r(){for(;n.length;){var e=n.pop();if(e in t)return r.value=e,r.done=!1,r}return r.done=!0,r}},E.values=d,p.prototype={constructor:p,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=g,this.done=!1,this.delegate=null,this.method="next",this.arg=g,this.tryEntries.forEach(v),!t)for(var n in this)"t"===n.charAt(0)&&m.call(this,n)&&!isNaN(+n.slice(1))&&(this[n]=g)},stop:function(){this.done=!0;var t=this.tryEntries[0],n=t.completion;if("throw"===n.type)throw n.arg;return this.rval},dispatchException:function(t){function n(n,e){return o.type="throw",o.arg=t,r.next=n,e&&(r.method="next",r.arg=g),!!e}if(this.done)throw t;for(var r=this,e=this.tryEntries.length-1;e>=0;--e){var i=this.tryEntries[e],o=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var u=m.call(i,"catchLoc"),c=m.call(i,"finallyLoc");if(u&&c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!c)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,n){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.tryLoc<=this.prev&&m.call(e,"finallyLoc")&&this.prev<e.finallyLoc){var i=e;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=n&&n<=i.finallyLoc&&(i=null);var o=i?i.completion:{};return o.type=t,o.arg=n,i?(this.method="next",this.next=i.finallyLoc,A):this.complete(o)},complete:function(t,n){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&n&&(this.next=n),A},finish:function(t){for(var n=this.tryEntries.length-1;n>=0;--n){var r=this.tryEntries[n];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),v(r),A}},catch:function(t){for(var n=this.tryEntries.length-1;n>=0;--n){var r=this.tryEntries[n];if(r.tryLoc===t){var e=r.completion;if("throw"===e.type){var i=e.arg;v(r)}return i}}throw new Error("illegal catch attempt")},delegateYield:function(t,n,r){return this.delegate={iterator:d(t),resultName:n,nextLoc:r},"next"===this.method&&(this.arg=g),A}}}("object"==typeof n?n:"object"==typeof window?window:"object"==typeof self?self:this)}).call(n,function(){return this}(),r(158))}])</script><script src="/./main.0cf68a.js"></script><script>!function(){!function(e){var t=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(t),t.setAttribute("src",e)}("/slider.e37972.js")}()</script>
 
 
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-nav header-menu">
@@ -490,7 +494,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -534,11 +538,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://alex.zhangshifen38.icu:1024" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Zhangshifen</a>
+              <a href="https://alex.zhangshifen38.icu:1024" target="_blank" class="search-title" rel="external nofollow noopener noreferrer"><i class="icon-quo-left icon"></i>Zhangshifen</a>
             </li>
           
             <li class="search-li">
-              <a href="https://yihanwu1024.me" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Yihanwu</a>
+              <a href="https://yihanwu1024.me" target="_blank" class="search-title" rel="external nofollow noopener noreferrer"><i class="icon-quo-left icon"></i>Yihanwu</a>
             </li>
           
         </ul>
@@ -618,4 +622,3 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 </div>
   </div>
 </body>
-</html>
