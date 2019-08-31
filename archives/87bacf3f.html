@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://blog.laoliu.icu">
-  <title>Pray_For_KyoAni | Lao_Liu Blog</title>
+  <title>群晖-外网访问一站式教程2 DDNS | Lao_Liu Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Pray_For_KyoAniMy favorite one.">
-<meta name="keywords" content="随笔,KyoAni">
+  <meta name="description" content="如何从外网访问群晖服务器？最有效的方法-DDNS。">
+<meta name="keywords" content="群晖,内网穿透,外网访问,DDNS,cloudflare">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Pray_For_KyoAni">
-<meta property="og:url" content="https://blog.laoliu.icu/archives/b44dd026.html">
+<meta property="og:title" content="群晖-外网访问一站式教程2 DDNS">
+<meta property="og:url" content="https://blog.laoliu.icu/archives/87bacf3f.html">
 <meta property="og:site_name" content="Lao_Liu Blog">
-<meta property="og:description" content="Pray_For_KyoAniMy favorite one.">
+<meta property="og:description" content="如何从外网访问群晖服务器？最有效的方法-DDNS。">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:updated_time" content="2019-08-20T08:12:34.121Z">
+<meta property="og:updated_time" content="2019-08-31T10:56:59.301Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pray_For_KyoAni">
-<meta name="twitter:description" content="Pray_For_KyoAniMy favorite one.">
+<meta name="twitter:title" content="群晖-外网访问一站式教程2 DDNS">
+<meta name="twitter:description" content="如何从外网访问群晖服务器？最有效的方法-DDNS。">
   
     <link rel="alternative" href="/atom.xml" title="Lao_Liu Blog" type="application/atom+xml">
   
@@ -155,27 +155,40 @@
             <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Pray-For-KyoAni" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-群晖-外网访问一站式教程2 DDNS" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Pray_For_KyoAni
+      群晖-外网访问一站式教程2 DDNS
     </h1>
   
 
         
-        <a href="/archives/b44dd026.html" class="archive-article-date">
-  	<time datetime="2019-07-18T07:19:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-18</time>
+        <a href="/archives/87bacf3f.html" class="archive-article-date">
+  	<time datetime="2019-08-31T10:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Pray-For-KyoAni"><a href="#Pray-For-KyoAni" class="headerlink" title="Pray_For_KyoAni"></a>Pray_For_KyoAni</h1><h2 id="My-favorite-one"><a href="#My-favorite-one" class="headerlink" title="My favorite one."></a>My favorite one.</h2>
+        <h4 id="什么是DDNS"><a href="#什么是DDNS" class="headerlink" title="什么是DDNS"></a>什么是DDNS</h4><p><a href="https://zh.m.wikipedia.org/zh/%E5%8B%95%E6%85%8BDNS" rel="external nofollow noopener noreferrer" target="_blank">维基百科-动态DNS</a><br>鉴于IPv4地址的枯竭，运营商开始给家用宽带分配动态IP地址，即IP会随时间或重新拨号而改变。DDNS可以允许用户通过API动态地将变化的IP地址传送给域名解析商，达到域名外网访问的效果。<br>由于带宽分配原因，家用宽带的上传带宽一般在20-30mbps间，故外网访问速度并没有达到如签约的100mbps属正常。</p>
+<hr>
+<h4 id="事先准备"><a href="#事先准备" class="headerlink" title="事先准备"></a>事先准备</h4><p>打电话给IPS（运营商）的小姐姐，让她给你公网IP，如果问起原因可以回答家里装监控。没有开启公网IP将无法从外网访问家庭的内部网络。<br>由于运营商（指大部分，如电信）封锁了80（HTTP）和443（HTTPS）端口，我们将使用其他的端口进行访问。挑选一些你喜欢的端口，预备使用（如8080-8090，4431-4439等）。</p>
+<a id="more"></a>
+
+<hr>
+<h4 id="选择支持DDNS的域名解析服务商"><a href="#选择支持DDNS的域名解析服务商" class="headerlink" title="选择支持DDNS的域名解析服务商"></a>选择支持DDNS的域名解析服务商</h4><h5 id="Cloudflare"><a href="#Cloudflare" class="headerlink" title="Cloudflare"></a>Cloudflare</h5><p>老牌的域名解析商，也是少有的免费提供CDN的服务商。<br>我推荐Cloudflare的原因有三点</p>
+<ol>
+<li>可以使用CDN，保证网络质量始终处于较好状态。例如，我的Blog搭建在Github上，若有时因网络抽风无法访问Github，CDN能助你一臂之力。</li>
+<li>可以查看连接数，数据量，访客量等详细数据。</li>
+<li>API获取方便。</li>
+</ol>
+<hr>
+<h5 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h5>
       
 
       
@@ -188,11 +201,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">KyoAni</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
         		</li>
       		
 		</ul>
@@ -211,15 +220,20 @@
   
 <nav id="article-nav">
   
-    <a href="/archives/757c72a1.html" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/archives/a4c81e8f.html" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          年轻人的第一台NAS(误)-硬件选购
+          搭建Calibre-Web电子书网页端管理服务
         
       </div>
     </a>
   
+  
+    <a href="/archives/8776c6d2.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">群晖-外网访问一站式教程1 Zerotier</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -244,7 +258,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Pray-For-KyoAni"><span class="toc-number">1.</span> <span class="toc-text">Pray_For_KyoAni</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#My-favorite-one"><span class="toc-number">1.1.</span> <span class="toc-text">My favorite one.</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是DDNS"><span class="toc-number">1.</span> <span class="toc-text">什么是DDNS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事先准备"><span class="toc-number">2.</span> <span class="toc-text">事先准备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#选择支持DDNS的域名解析服务商"><span class="toc-number">3.</span> <span class="toc-text">选择支持DDNS的域名解析服务商</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Cloudflare"><span class="toc-number">3.1.</span> <span class="toc-text">Cloudflare</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#未完待续"><span class="toc-number">3.2.</span> <span class="toc-text">未完待续</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -280,7 +294,7 @@ if(true){
   	repo: 'LaoLiublog.github.io',
   	owner: 'Lao-Liu233',
   	admin: ['Lao-Liu233'],
-  	id: 'Thu Jul 18 2019 15:19:16 GMT+0800',
+  	id: 'Sat Aug 31 2019 18:30:00 GMT+0800',
   	distractionFreeMode: 'true'
 })
 gitalk.render('gitalk-container') 
@@ -389,14 +403,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">教程</a>
               </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">KyoAni</a>
-              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -452,6 +458,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           
             <li class="search-li">
               <a href="https://yihanwu1024.me" target="_blank" class="search-title" rel="external nofollow noopener noreferrer"><i class="icon-quo-left icon"></i>Yihanwu</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://blog.cedarsaigyouji.tk" target="_blank" class="search-title" rel="external nofollow noopener noreferrer"><i class="icon-quo-left icon"></i>Cedar</a>
             </li>
           
         </ul>
