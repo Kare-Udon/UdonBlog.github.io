@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.laoliu.icu/"/>
-  <updated>2019-08-31T10:57:08.980Z</updated>
+  <updated>2019-09-14T10:04:13.219Z</updated>
   <id>https://blog.laoliu.icu/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>对于“智慧校园”与人脸识别的一些看法</title>
+    <link href="https://blog.laoliu.icu/archives/330720fc.html"/>
+    <id>https://blog.laoliu.icu/archives/330720fc.html</id>
+    <published>2019-09-14T10:00:00.000Z</published>
+    <updated>2019-09-14T10:04:13.219Z</updated>
+    
+    <summary type="html">
+    
+      对于“智慧校园”与人脸识别的一些看法。
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://blog.laoliu.icu/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建Calibre-Web电子书网页端管理服务</title>

@@ -6,26 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://blog.laoliu.icu">
-  <title>群晖-MC基岩版服务器教程 | Lao_Liu Blog</title>
+  <title>Tag: 随笔 | Lao_Liu Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在群晖服务器上搭建Minecraft基岩版服务器。">
-<meta name="keywords" content="群晖,MC,Minecraft,基岩版,服务器,教程">
-<meta property="og:type" content="article">
-<meta property="og:title" content="群晖-MC基岩版服务器教程">
-<meta property="og:url" content="https://blog.laoliu.icu/archives/2716e842.html">
+  <meta name="description" content="Lao_Liu`s Blog.">
+<meta name="keywords" content="no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lao_Liu Blog">
+<meta property="og:url" content="https://blog.laoliu.icu/tags/随笔/index.html">
 <meta property="og:site_name" content="Lao_Liu Blog">
-<meta property="og:description" content="在群晖服务器上搭建Minecraft基岩版服务器。">
+<meta property="og:description" content="Lao_Liu`s Blog.">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/1.png">
-<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/2.png">
-<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/3.png">
-<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/4.png">
-<meta property="og:image" content="https://blog.laoliu.icu/images/MC_server/5.png">
-<meta property="og:updated_time" content="2019-08-20T08:22:58.364Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="群晖-MC基岩版服务器教程">
-<meta name="twitter:description" content="在群晖服务器上搭建Minecraft基岩版服务器。">
-<meta name="twitter:image" content="https://blog.laoliu.icu/images/MC_server/1.png">
+<meta name="twitter:title" content="Lao_Liu Blog">
+<meta name="twitter:description" content="Lao_Liu`s Blog.">
   
     <link rel="alternative" href="/atom.xml" title="Lao_Liu Blog" type="application/atom+xml">
   
@@ -161,182 +154,61 @@
             <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-MC_Server" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      群晖-MC基岩版服务器教程
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/archives/330720fc.html" class="archive-article-date">
+  	<time datetime="2019-09-14T10:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-14</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/archives/330720fc.html">对于“智慧校园”与人脸识别的一些看法</a>
     </h1>
   
 
-        
-        <a href="/archives/2716e842.html" class="archive-article-date">
-  	<time datetime="2019-07-27T15:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong><em>本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。</em></strong></p>
-<a id="more"></a>
-
-<h4 id="1-Docker映像（image）的选择"><a href="#1-Docker映像（image）的选择" class="headerlink" title="1.Docker映像（image）的选择"></a>1.Docker映像（image）的选择</h4><p>在尝试过5款映像后，Lao_Liu决定使用基于<strong>官方服务器端软件</strong>制作的这一款docker映像。</p>
-<p><a href="https://hub.docker.com/r/toasterlint/minecraft_bedrock/" rel="external nofollow noopener noreferrer" target="_blank">toasterlint-minecraft_bedrock</a></p>
-<p><img src="/images/MC_server/1.png" alt></p>
-<p><strong>为什么我挑选了这款映像？</strong></p>
-<ul>
-<li>官方映像拥有<strong>所有原版特性</strong>；</li>
-<li>官方映像<strong>更新快</strong>（docker会稍滞后）；</li>
-<li>官方映像有<strong>完整的生物系统</strong>！（必须要提出来说）。</li>
-</ul>
-<hr>
-<h4 id="2-映像的使用"><a href="#2-映像的使用" class="headerlink" title="2.映像的使用"></a>2.映像的使用</h4><p><img src="/images/MC_server/2.png" alt></p>
-<p>在 <strong>注册表</strong> 页面下载好映像之后，你会在 <strong>映像</strong> 页面发现它。双击映像，进入开启前的设置页面。</p>
-<hr>
-<p><img src="/images/MC_server/3.png" alt></p>
-<p>（这个页面会有些许不同，“启用自动重新启动”以及接下来的设置位于 <strong>高级设置</strong> 中）</p>
-<p> 这里我勾选了“启用资源限制”来防止docker占用过多内存。但经过长时间的使用后Lao_Liu发现完全不需要有顾虑，这个docker最多占用500mb内存。</p>
-<p>“启用自动重新启动”可以勾选，在docker遇到问题被关闭时会自动尝试再次开启。</p>
-<hr>
-<p><img src="/images/MC_server/4.png" alt></p>
-<p>在“卷”设置中，我们选择<strong>“添加文件夹”</strong>，并在喜欢的位置新建一个文件夹来保存MC服务器的配置文件与<strong>更加重要的地图数据</strong>。</p>
-<p>然后在<strong>”装载路径“</strong>处输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/data</span><br></pre></td></tr></table></figure>
-
-<p>这样我们就将NAS上的一个文件夹装载进docker的 /data 路径下，服务器产生的数据就会保存在本地硬盘，不会因为docker的关闭而丢失（像内存断电一样），同时也方便我们进行备份。</p>
-<hr>
-<p><img src="/images/MC_server/5.png" alt></p>
-<p>在“端口设置”中，按照图中所示<strong>添加19132端口的TCP与UDP通道</strong>。在路由器处配置<strong>19132的端口转发</strong>（记得要同时转发TCP和UDP哦，游戏通讯是有用到UDP的），就能在外网访问MC服务器了。</p>
-<hr>
-<p>以上就是使用群晖搭建MC基岩版服务器的教程。很简单吧）</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/archives/8776c6d2.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          群晖-外网访问一站式教程1 Zerotier
-        
-      </div>
-    </a>
   
   
-    <a href="/archives/757c72a1.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">年轻人的第一台NAS(误)-硬件选购</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Docker映像（image）的选择"><span class="toc-number">1.</span> <span class="toc-text">1.Docker映像（image）的选择</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-映像的使用"><span class="toc-number">2.</span> <span class="toc-text">2.映像的使用</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
+    
 
-  
-
-  
-
-
-
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-
-if(true){
-	var gitalk = new Gitalk({
-  	clientID: '924b3db2d29629f6526b',
-  	clientSecret: 'cdecc8febd3f52e490141f2b2d8036c1f31a2fca',
-  	repo: 'LaoLiublog.github.io',
-  	owner: 'Lao-Liu233',
-  	admin: ['Lao-Liu233'],
-  	id: 'Sat Jul 27 2019 23:30:00 GMT+0800',
-  	distractionFreeMode: 'true'
-})
-gitalk.render('gitalk-container') 
-}
-</script>
-
-  
-
-  <!--显示阅读次数-->
-
-  <br>
-  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
-  <span class="icon-sort"></span>
-  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
-            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
-  </span>
-  </a>
 
           </div>
         </div>
@@ -358,9 +230,9 @@ gitalk.render('gitalk-container')
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
