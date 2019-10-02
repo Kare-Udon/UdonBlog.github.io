@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.laoliu.icu/"/>
-  <updated>2019-09-29T12:57:40.888Z</updated>
+  <updated>2019-10-02T11:10:20.000Z</updated>
   <id>https://blog.laoliu.icu/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建Calibre-Web电子书网页端管理服务</title>
+    <link href="https://blog.laoliu.icu/archives/a4c81e8f.html"/>
+    <id>https://blog.laoliu.icu/archives/a4c81e8f.html</id>
+    <published>2019-10-02T10:30:00.000Z</published>
+    <updated>2019-10-02T11:10:20.000Z</updated>
+    
+    <summary type="html">
+    
+      利用群晖or其他系统搭建Calibre-Web服务器，管理电子书。速记，待补充。
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="https://blog.laoliu.icu/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>秒知APP消息发送教程</title>
@@ -49,24 +67,6 @@
     
     
       <category term="随笔" scheme="https://blog.laoliu.icu/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搭建Calibre-Web电子书网页端管理服务</title>
-    <link href="https://blog.laoliu.icu/archives/a4c81e8f.html"/>
-    <id>https://blog.laoliu.icu/archives/a4c81e8f.html</id>
-    <published>2019-08-31T10:30:00.000Z</published>
-    <updated>2019-08-31T10:57:08.980Z</updated>
-    
-    <summary type="html">
-    
-      利用群晖or其他系统搭建Calibre-Web服务器，管理电子书。速记，待补充。
-    
-    </summary>
-    
-    
-      <category term="教程" scheme="https://blog.laoliu.icu/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   

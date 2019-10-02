@@ -16,10 +16,12 @@
 <meta property="og:site_name" content="Lao_Liu Blog">
 <meta property="og:description" content="利用群晖or其他系统搭建Calibre-Web服务器，管理电子书。速记，待补充。">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:updated_time" content="2019-08-31T10:57:08.980Z">
+<meta property="og:image" content="http://oneindex.laoliu.evai.pl/?/image/Calibre-web/1.jpg">
+<meta property="og:updated_time" content="2019-10-02T11:10:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建Calibre-Web电子书网页端管理服务">
 <meta name="twitter:description" content="利用群晖or其他系统搭建Calibre-Web服务器，管理电子书。速记，待补充。">
+<meta name="twitter:image" content="http://oneindex.laoliu.evai.pl/?/image/Calibre-web/1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Lao_Liu Blog" type="application/atom+xml">
   
@@ -168,30 +170,63 @@
 
         
         <a href="/archives/a4c81e8f.html" class="archive-article-date">
-  	<time datetime="2019-08-31T10:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-31</time>
+  	<time datetime="2019-10-02T10:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Warning:</p>
-<p>速记，待补充。</p>
-<p>此服务器软件不是非常稳定（很是不稳定）！</p>
-<p>基于python，运行效率较低！</p>
+        <h4 id="说在前面"><a href="#说在前面" class="headerlink" title="说在前面"></a>说在前面</h4><p>(听说docker要退出群晖了？莫大的损失！)</p>
+<p>Kindle是一样阅读利器，但若是没有一个强大的书库，它也只能用来压泡面（笑）</p>
+<p>今天我们利用docker在群晖（任意系统）上搭建Calibre-web服务</p>
 <a id="more"></a>
 
-<hr>
-<p>基于docker快速部署环境</p>
-<p>下载 <code>janeczku-calibre-web</code>映像</p>
-<p>卷中添加一文件夹，装载路径为<code>/books/calibre</code></p>
-<p>开启后于数据库位置填写<code>/books/calibre</code>，即可开始使用</p>
-<p>！正在收集造成500服务器错误的原因</p>
-<hr>
-<p>ps:</p>
-<p>1.本地calibre软件可读取数据库并且可对其进行更改。修改后可重新读取数据库或重启docker以刷新数据。</p>
-<p>2.若安装时提示数据库错误，可在本地calibre软件建立空白书库，把数据库拷贝至<code>/books/calibre</code>即可解决问题。</p>
-<p>3.书籍获取？参考书伴文章。</p>
+<h4 id="docker选择"><a href="#docker选择" class="headerlink" title="docker选择"></a>docker选择</h4><blockquote>
+<p><a href="https://hub.docker.com/r/technosoft2000/calibre-web/" rel="external nofollow noopener noreferrer" target="_blank">technosoft2000-calibre-web</a></p>
+</blockquote>
+<p>Lao_Liu在尝试了3款docker后，决定使用这款。</p>
+<h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><h5 id="Calibre-web"><a href="#Calibre-web" class="headerlink" title="Calibre-web"></a>Calibre-web</h5><ul>
+<li><p>基于Python，性能高（低）</p>
+</li>
+<li><p>与Calibre软件的数据库等文件完全互通</p>
+</li>
+<li><p>支持推送至kindle</p>
+</li>
+<li><p>支持在线转码书籍（虽然问题较多）</p>
+</li>
+</ul>
+<h5 id="technosoft2000-calibre-web"><a href="#technosoft2000-calibre-web" class="headerlink" title="technosoft2000-calibre-web"></a>technosoft2000-calibre-web</h5><ul>
+<li><p>比起其他image版本更新更加稳定（稳定很多）</p>
+</li>
+<li><p>支持在线转码（其他image不成）</p>
+</li>
+<li><p>版本较新</p>
+</li>
+</ul>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>首先，将你的Calibre数据库的位置挂载到docker内的 <strong>/books</strong>。</p>
+<p>启动docker后不要着急，等待docker内软件安装完毕后，访问您设置的端口，访问Calibre-web。</p>
+<p>在 <strong>Calibre 数据库位置</strong> 一栏填写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/books</span><br></pre></td></tr></table></figure>
+
+<p><strong>特性配置</strong> 可以依情况而变，不一定要按Lao_Liu的配置。</p>
+<p>若想要使用在线转码功能，<strong>外部二进制</strong> 一栏中，选择 <strong>使用calibre的电子书转换器</strong> 。 <strong>转换工具路径</strong> 按图片中填写。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/opt/calibre/ebook-convert</span><br></pre></td></tr></table></figure>
+
+<p>点击 <strong>提交</strong> 即可完成安装。</p>
+<p><strong>注意</strong></p>
+<p>若提示无法读取数据库，尝试将数据库所处的文件夹的权限改为<strong>755</strong> 。</p>
+<p>如何操作？请打开SSH，在terminal内操作。</p>
+<p>若还是失败，尝试在本地Calibre软件新建一个书库，将<strong>空的</strong>数据库文件移动到你挂载的目录下。</p>
+<p><strong>安装界面示意图</strong></p>
+<p><img src="http://oneindex.laoliu.evai.pl/?/image/Calibre-web/1.jpg" alt></p>
+<h4 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h4><p>安装后的操作Lao_Liu就不多提了。该上传书籍的上传，该push的push。</p>
+<p>Lao_Liu给几个建议：</p>
+<ul>
+<li>推送邮箱推荐使用outlook，限制少。</li>
+<li>可以用Calibre软件管理数据库。不知道为什么，在本地做好更改后，网页版并没有任何变化。Lao_Liu试着备份又还原了数据库后，网页里再重新加载数据库才成功了。</li>
+<li>网页转码会遇到种种问题，例如电子书有加密。转码失败实属正常。</li>
+</ul>
 
       
 
@@ -224,18 +259,9 @@
   
 <nav id="article-nav">
   
-    <a href="/archives/330720fc.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          对于“智慧校园”与人脸识别的一些看法
-        
-      </div>
-    </a>
   
-  
-    <a href="/archives/87bacf3f.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">群晖-外网访问一站式教程2 DDNS</div>
+    <a href="/archives/8ca2a7b3.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">秒知APP消息发送教程</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -262,7 +288,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#说在前面"><span class="toc-number">1.</span> <span class="toc-text">说在前面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#docker选择"><span class="toc-number">2.</span> <span class="toc-text">docker选择</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#优点"><span class="toc-number">3.</span> <span class="toc-text">优点</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Calibre-web"><span class="toc-number">3.1.</span> <span class="toc-text">Calibre-web</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#technosoft2000-calibre-web"><span class="toc-number">3.2.</span> <span class="toc-text">technosoft2000-calibre-web</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装"><span class="toc-number">4.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#尾声"><span class="toc-number">5.</span> <span class="toc-text">尾声</span></a></li></ol>
                     </div>
                 </span>
             </div>
