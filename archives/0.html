@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://blog.laoliu.icu">
-  <title>iPv6下绝佳的DDNS方法-dynv6 | Lao_Liu Blog</title>
+  <title>Lao_Liu Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="下面Lao_Liu介绍一种适用于iPv6-DDNS的绝佳方法！">
-<meta name="keywords" content="内网穿透,外网访问,DDNS,dynv6">
+  <meta name="description" content="title: 声明tags:   随笔abbrlink:keywords:description: 。date: 2019-10-16 12:40:00    #本博客只涉及技术方面的文章，不愿也不会涉及政治。请任何人不要检举揭发或来这里检查是否有政治文章，更别检查我的电脑和手机。">
+<meta name="keywords" content="no">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iPv6下绝佳的DDNS方法-dynv6">
-<meta property="og:url" content="https://blog.laoliu.icu/archives/27f2d840.html">
+<meta property="og:title" content="Lao_Liu Blog">
+<meta property="og:url" content="https://blog.laoliu.icu/archives/0.html">
 <meta property="og:site_name" content="Lao_Liu Blog">
-<meta property="og:description" content="下面Lao_Liu介绍一种适用于iPv6-DDNS的绝佳方法！">
+<meta property="og:description" content="title: 声明tags:   随笔abbrlink:keywords:description: 。date: 2019-10-16 12:40:00    #本博客只涉及技术方面的文章，不愿也不会涉及政治。请任何人不要检举揭发或来这里检查是否有政治文章，更别检查我的电脑和手机。">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:updated_time" content="2019-10-03T15:45:07.311Z">
+<meta property="og:updated_time" content="2019-10-16T04:41:29.181Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iPv6下绝佳的DDNS方法-dynv6">
-<meta name="twitter:description" content="下面Lao_Liu介绍一种适用于iPv6-DDNS的绝佳方法！">
+<meta name="twitter:title" content="Lao_Liu Blog">
+<meta name="twitter:description" content="title: 声明tags:   随笔abbrlink:keywords:description: 。date: 2019-10-16 12:40:00    #本博客只涉及技术方面的文章，不愿也不会涉及政治。请任何人不要检举揭发或来这里检查是否有政治文章，更别检查我的电脑和手机。">
   
     <link rel="alternative" href="/atom.xml" title="Lao_Liu Blog" type="application/atom+xml">
   
@@ -155,57 +155,18 @@
             <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2019-10-03-iPv6下最好的DDNS方法-dynv6" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-声明" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      iPv6下绝佳的DDNS方法-dynv6
-    </h1>
-  
-
-        
-        <a href="/archives/27f2d840.html" class="archive-article-date">
-  	<time datetime="2019-10-03T15:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-03</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>下面Lao_Liu介绍一种适用于iPv6-DDNS的绝佳方法！</p>
-<a id="more"></a>
-
-<h3 id="通过iPv6访问的优点"><a href="#通过iPv6访问的优点" class="headerlink" title="通过iPv6访问的优点"></a>通过iPv6访问的优点</h3><p>没有端口限制！！！可以通过80/443访问web服务器了！不用带着烦人的端口号！</p>
-<p>每台设备有独立的iPv6，配置更加方便，无需路由器充当网关进行端口转发！</p>
-<h3 id="iPv6也有不足之处"><a href="#iPv6也有不足之处" class="headerlink" title="iPv6也有不足之处"></a>iPv6也有不足之处</h3><p>最严重的问题：很多家宽并没有开启iPv6的获取。但访问iPv6的设备必须要拥有iPv6地址！</p>
-<p>技术问题，难以解决。一般来说手机的移动网络都已分发iPv6地址。</p>
-<p>想要家宽拥有iPv6？或许你需要修改光猫设置（超级管理），亦或是将光猫改为桥接模式，用路由器拨号从而获取iPv6地址。</p>
-<h3 id="如何实现iPv6-DDNS"><a href="#如何实现iPv6-DDNS" class="headerlink" title="如何实现iPv6-DDNS"></a>如何实现iPv6-DDNS</h3><ul>
-<li>在 <a href="https://dynv6.com" rel="external nofollow noopener noreferrer" target="_blank">dynv6</a>注册一个账号</li>
-<li>在 <strong>Instructions</strong> 界面查看API与你的DDNS域名</li>
-<li>下载官方提供的 <a href="https://gist.github.com/corny/7a07f5ac901844bd20c9" rel="external nofollow noopener noreferrer" target="_blank">a nice script</a></li>
-</ul>
-<blockquote>
-<p>这点尤其重要！Lao_Liu在网络上寻寻觅觅无数脚本，总是失败。最后才发现官方有提供脚本也！一试马上就成功了。</p>
-</blockquote>
+        <hr>
+<p>title: 声明<br>tags: </p>
 <ul>
-<li>按照页面内提供的代码执行脚本</li>
+<li>随笔<br>abbrlink:<br>keywords:<br>description: 。<br>date: 2019-10-16 12:40:00 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">token= *your token* ./dynv6.sh *your DDNS domain*</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>可以将其添加到crontab一类的软件内，规定时间自动执行脚本（每10分钟一次为宜）</li>
-</ul>
-<p><strong>大功告成！</strong></p>
-<h3 id="事后"><a href="#事后" class="headerlink" title="事后"></a>事后</h3><ul>
-<li>你可以把自己的域名CNAME过去</li>
-<li>也可以用dynv6提供的域名</li>
-</ul>
-<p>随心所欲！</p>
-<p>Over.</p>
+<hr>
+<p>#本博客只涉及技术方面的文章，不愿也不会涉及政治。请任何人不要检举揭发或来这里检查是否有政治文章，更别检查我的电脑和手机。</p>
 
       
 
@@ -214,17 +175,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -238,18 +188,9 @@
   
 <nav id="article-nav">
   
-    <a href="/archives/0.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/archives/a4c81e8f.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">搭建Calibre-Web电子书网页端管理服务</div>
+    <a href="/archives/27f2d840.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">iPv6下绝佳的DDNS方法-dynv6</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -276,7 +217,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#通过iPv6访问的优点"><span class="toc-number">1.</span> <span class="toc-text">通过iPv6访问的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#iPv6也有不足之处"><span class="toc-number">2.</span> <span class="toc-text">iPv6也有不足之处</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如何实现iPv6-DDNS"><span class="toc-number">3.</span> <span class="toc-text">如何实现iPv6-DDNS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事后"><span class="toc-number">4.</span> <span class="toc-text">事后</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>

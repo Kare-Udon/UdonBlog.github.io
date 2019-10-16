@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.laoliu.icu/"/>
-  <updated>2019-10-03T15:45:07.311Z</updated>
+  <updated>2019-10-16T04:41:29.181Z</updated>
   <id>https://blog.laoliu.icu/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://blog.laoliu.icu/archives/0.html"/>
+    <id>https://blog.laoliu.icu/archives/0.html</id>
+    <published>2019-10-16T04:41:29.181Z</published>
+    <updated>2019-10-16T04:41:29.181Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>iPv6下绝佳的DDNS方法-dynv6</title>
