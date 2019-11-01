@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://blog.laoliu.icu">
-  <title>群晖-外网访问一站式教程2 DDNS | Lao_Liu Blog</title>
+  <title>Archives: 2019 | Lao_Liu Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="如何从外网访问群晖服务器？最有效的方法-DDNS。">
-<meta name="keywords" content="群晖,内网穿透,外网访问,DDNS,cloudflare">
-<meta property="og:type" content="article">
-<meta property="og:title" content="群晖-外网访问一站式教程2 DDNS">
-<meta property="og:url" content="https://blog.laoliu.icu/archives/87bacf3f.html">
+  <meta name="description" content="Lao_Liu`s Blog.">
+<meta name="keywords" content="no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lao_Liu Blog">
+<meta property="og:url" content="https://blog.laoliu.icu/archives/2019/page/2/index.html">
 <meta property="og:site_name" content="Lao_Liu Blog">
-<meta property="og:description" content="如何从外网访问群晖服务器？最有效的方法-DDNS。">
+<meta property="og:description" content="Lao_Liu`s Blog.">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:updated_time" content="2019-08-31T10:56:59.301Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="群晖-外网访问一站式教程2 DDNS">
-<meta name="twitter:description" content="如何从外网访问群晖服务器？最有效的方法-DDNS。">
+<meta name="twitter:title" content="Lao_Liu Blog">
+<meta name="twitter:description" content="Lao_Liu`s Blog.">
   
     <link rel="alternative" href="/atom.xml" title="Lao_Liu Blog" type="application/atom+xml">
   
@@ -155,47 +154,36 @@
             <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-群晖-外网访问一站式教程2 DDNS" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      群晖-外网访问一站式教程2 DDNS
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/archives/757c72a1.html" class="archive-article-date">
+  	<time datetime="2019-07-19T01:30:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-19</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/archives/757c72a1.html">年轻人的第一台NAS(误)-硬件选购</a>
     </h1>
   
 
-        
-        <a href="/archives/87bacf3f.html" class="archive-article-date">
-  	<time datetime="2019-08-31T10:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h4 id="什么是DDNS"><a href="#什么是DDNS" class="headerlink" title="什么是DDNS"></a>什么是DDNS</h4><p><a href="https://zh.m.wikipedia.org/zh/%E5%8B%95%E6%85%8BDNS" rel="external nofollow noopener noreferrer" target="_blank">维基百科-动态DNS</a><br>鉴于IPv4地址的枯竭，运营商开始给家用宽带分配动态IP地址，即IP会随时间或重新拨号而改变。DDNS可以允许用户通过API动态地将变化的IP地址传送给域名解析商，达到域名外网访问的效果。<br>由于带宽分配原因，家用宽带的上传带宽一般在20-30mbps间，故外网访问速度并没有达到如签约的100mbps属正常。</p>
-<hr>
-<h4 id="事先准备"><a href="#事先准备" class="headerlink" title="事先准备"></a>事先准备</h4><p>打电话给IPS（运营商）的小姐姐，让她给你公网IP，如果问起原因可以回答家里装监控。没有开启公网IP将无法从外网访问家庭的内部网络。<br>由于运营商（指大部分，如电信）封锁了80（HTTP）和443（HTTPS）端口，我们将使用其他的端口进行访问。挑选一些你喜欢的端口，预备使用（如8080-8090，4431-4439等）。</p>
-<a id="more"></a>
-
-<hr>
-<h4 id="选择支持DDNS的域名解析服务商"><a href="#选择支持DDNS的域名解析服务商" class="headerlink" title="选择支持DDNS的域名解析服务商"></a>选择支持DDNS的域名解析服务商</h4><h5 id="Cloudflare"><a href="#Cloudflare" class="headerlink" title="Cloudflare"></a>Cloudflare</h5><p>老牌的域名解析商，也是少有的免费提供CDN的服务商。<br>我推荐Cloudflare的原因有三点</p>
-<ol>
-<li>可以使用CDN，保证网络质量始终处于较好状态。例如，我的Blog搭建在Github上，若有时因网络抽风无法访问Github，CDN能助你一臂之力。</li>
-<li>可以查看连接数，数据量，访客量等详细数据。</li>
-<li>API获取方便。</li>
-</ol>
-<hr>
-<h5 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h5>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -207,113 +195,24 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/archives/330720fc.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          对于“智慧校园”与人脸识别的一些看法
-        
-      </div>
-    </a>
   
   
-    <a href="/archives/8776c6d2.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">群晖-外网访问一站式教程1 Zerotier</div>
-      <i class="icon-circle-right"></i>
-    </a>
+    </div></section>
   
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#什么是DDNS"><span class="toc-number">1.</span> <span class="toc-text">什么是DDNS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事先准备"><span class="toc-number">2.</span> <span class="toc-text">事先准备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#选择支持DDNS的域名解析服务商"><span class="toc-number">3.</span> <span class="toc-text">选择支持DDNS的域名解析服务商</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Cloudflare"><span class="toc-number">3.1.</span> <span class="toc-text">Cloudflare</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#未完待续"><span class="toc-number">3.2.</span> <span class="toc-text">未完待续</span></a></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-
-
-
-  <!--显示阅读次数-->
-
-
-
-      <!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC80Njg4Mi8yMzM4Mw==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
-<!-- City版安装代码已完成 -->
 
     
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/2019/">&laquo; Prev</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
-  <br>
-  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
-  <span class="icon-sort"></span>
-  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
-            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
-  </span>
-  </a>
 
           </div>
         </div>
@@ -335,8 +234,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
