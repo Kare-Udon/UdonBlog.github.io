@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Lao_Liu Blog">
 <meta property="og:description" content="Joplin使用群晖搭建的Webdav同步会遇到问题，这是可能的解决方案。">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:updated_time" content="2020-01-06T10:24:45.508Z">
+<meta property="og:updated_time" content="2020-01-06T12:23:17.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Joplin+Webdav同步问题的解决方案">
 <meta name="twitter:description" content="Joplin使用群晖搭建的Webdav同步会遇到问题，这是可能的解决方案。">
@@ -176,6 +176,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="问题内容"><a href="#问题内容" class="headerlink" title="问题内容"></a>问题内容</h2><p>在群晖上搭建了Webdav服务器，使用Joplin连接后无法同步笔记。</p>
+<a id="more"></a> 
+
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="错误示范："><a href="#错误示范：" class="headerlink" title="错误示范："></a>错误示范：</h3><p>‘ <a href="https://your.domain.com:[your" rel="external nofollow noopener noreferrer" target="_blank">https://your.domain.com:[your</a> port] ‘</p>
 <p>以此路径访问的是群晖文件系统的“/ ”目录，由于没有权限读写，同步失败。</p>
 <h3 id="正确示范："><a href="#正确示范：" class="headerlink" title="正确示范："></a>正确示范：</h3><p>在群晖控制面板内新建一个名为“Joplin”的共享文件夹。以域名：</p>
