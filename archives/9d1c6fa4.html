@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://blog.laoliu.icu">
-  <title>Lao_Liu Blog</title>
+  <title>Joplin+Webdav同步问题的解决方案 | Lao_Liu Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Lao_Liu`s Blog.">
-<meta name="keywords" content="no">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lao_Liu Blog">
-<meta property="og:url" content="https://blog.laoliu.icu/page/2/index.html">
+  <meta name="description" content="Joplin使用群晖搭建的Webdav同步会遇到问题，这是可能的解决方案。">
+<meta name="keywords" content="群晖,Webdav,Joplin,同步,失败">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Joplin+Webdav同步问题的解决方案">
+<meta property="og:url" content="https://blog.laoliu.icu/archives/9d1c6fa4.html">
 <meta property="og:site_name" content="Lao_Liu Blog">
-<meta property="og:description" content="Lao_Liu`s Blog.">
+<meta property="og:description" content="Joplin使用群晖搭建的Webdav同步会遇到问题，这是可能的解决方案。">
 <meta property="og:locale" content="zh-hans">
+<meta property="og:updated_time" content="2020-01-06T10:24:45.508Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lao_Liu Blog">
-<meta name="twitter:description" content="Lao_Liu`s Blog.">
+<meta name="twitter:title" content="Joplin+Webdav同步问题的解决方案">
+<meta name="twitter:description" content="Joplin使用群晖搭建的Webdav同步会遇到问题，这是可能的解决方案。">
   
     <link rel="alternative" href="/atom.xml" title="Lao_Liu Blog" type="application/atom+xml">
   
@@ -154,32 +155,37 @@
             <canvas data-colors="#eaeaea" data-sectionheight="100" data-contentid="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-MC_Server" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Joplin+Webdav同步问题的解决方案" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/archives/2716e842.html">群晖-MC基岩版服务器教程</a>
+    <h1 class="article-title" itemprop="name">
+      Joplin+Webdav同步问题的解决方案
     </h1>
   
 
         
-        <a href="/archives/2716e842.html" class="archive-article-date">
-  	<time datetime="2019-07-27T15:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
+        <a href="/archives/9d1c6fa4.html" class="archive-article-date">
+  	<time datetime="2020-01-06T10:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-06</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong><em>本教程适合（黑）群晖小白食用，因为这是Lao_Liu多次吃瘪后总结出的经验之谈。操作均在图形界面进行。</em></strong></p>
-        
-          <a class="article-more-a" href="/archives/2716e842.html#more">more >></a>
-        
+        <h2 id="问题内容"><a href="#问题内容" class="headerlink" title="问题内容"></a>问题内容</h2><p>在群晖上搭建了Webdav服务器，使用Joplin连接后无法同步笔记。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="错误示范："><a href="#错误示范：" class="headerlink" title="错误示范："></a>错误示范：</h3><p>‘ <a href="https://your.domain.com:[your" rel="external nofollow noopener noreferrer" target="_blank">https://your.domain.com:[your</a> port] ‘</p>
+<p>以此路径访问的是群晖文件系统的“/ ”目录，由于没有权限读写，同步失败。</p>
+<h3 id="正确示范："><a href="#正确示范：" class="headerlink" title="正确示范："></a>正确示范：</h3><p>在群晖控制面板内新建一个名为“Joplin”的共享文件夹。以域名：</p>
+<p>‘ <a href="https://your.domain.com:[your" rel="external nofollow noopener noreferrer" target="_blank">https://your.domain.com:[your</a> port] /Joplin’</p>
+<p>访问即可同步。</p>
+<h3 id="自定义配置："><a href="#自定义配置：" class="headerlink" title="自定义配置："></a>自定义配置：</h3><p>若想在已经存在的文件夹下同步Joplin笔记，按照正确示范所书写的url书写路径即可在想要的地方同步。</p>
+<h2 id="解决方案的探索"><a href="#解决方案的探索" class="headerlink" title="解决方案的探索"></a>解决方案的探索</h2><p>（Lao_Liu并未了解过Webdav的原理）<br>遇到此问题时，我在上Google查找解决方法前试着自行分析。思考原因后我选择了抓包分析。</p>
+<p>结合抓包结果和Joplin同步日志可以看到Joplin在“/ ”目录下查找了.lock等文件。结合其他Webdav软件可以看到访问的URL指向的是目标文件夹，即“域名：端口/目标文件夹”，由此推测需要在配置内为Joplin指明同步目录，否则将在没有权限的根目录下同步，导致失败。</p>
+<p>这是一次没有什么技术含量但能启发我的尝试。若你也遇到了类似的问题，希望也能启发到你。</p>
+
       
 
       
@@ -201,16 +207,24 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/archives/2716e842.html">展开全文 >></a>
-        </p>
-      
 
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/archives/c7a0a8db.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">莱卡依然想要回家</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -225,109 +239,69 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-
-
-  <!--显示阅读次数-->
-
-  
-    <article id="post-NAS_hardware" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/archives/757c72a1.html">年轻人的第一台NAS(误)-硬件选购</a>
-    </h1>
-  
-
-        
-        <a href="/archives/757c72a1.html" class="archive-article-date">
-  	<time datetime="2019-07-19T01:30:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h4><p><strong>为什么我需要一台NAS?</strong></p>
-<ul>
-<li>拓展电脑/手机的储存空间。</li>
-<li>内网网速远大于外网网速，想体验1000mbps的高速传输。</li>
-<li>想拥有一台个人服务器。</li>
-<li>想……</li>
-</ul>
-        
-          <a class="article-more-a" href="/archives/757c72a1.html#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/archives/757c72a1.html">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#问题内容"><span class="toc-number">1.</span> <span class="toc-text">问题内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方案"><span class="toc-number">2.</span> <span class="toc-text">解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#错误示范："><span class="toc-number">2.1.</span> <span class="toc-text">错误示范：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#正确示范："><span class="toc-number">2.2.</span> <span class="toc-text">正确示范：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义配置："><span class="toc-number">2.3.</span> <span class="toc-text">自定义配置：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方案的探索"><span class="toc-number">3.</span> <span class="toc-text">解决方案的探索</span></a></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
 
 
   <!--显示阅读次数-->
 
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
-  
 
+
+      <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80Njg4Mi8yMzM4Mw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+
+    
+
+  <br>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
 
           </div>
         </div>
@@ -348,8 +322,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
