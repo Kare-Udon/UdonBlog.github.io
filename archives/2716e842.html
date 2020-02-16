@@ -16,16 +16,16 @@
 <meta property="og:site_name" content="Lao_Liu Blog">
 <meta property="og:description" content="在群晖服务器上搭建Minecraft基岩版服务器。">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:image" content="http://oneindex.laoliu.evai.pl/?/image/MC_server/1.png">
-<meta property="og:image" content="http://oneindex.laoliu.evai.pl/?/image/MC_server/2.png">
-<meta property="og:image" content="http://oneindex.laoliu.evai.pl/?/image/MC_server/3.png">
-<meta property="og:image" content="http://oneindex.laoliu.evai.pl/?/image/MC_server/4.png">
-<meta property="og:image" content="http://oneindex.laoliu.evai.pl/?/image/MC_server/5.png">
-<meta property="og:updated_time" content="2019-09-29T12:56:25.052Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/1.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/3.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/4.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/5.png">
+<meta property="og:updated_time" content="2020-02-16T05:29:49.157Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="群晖-MC基岩版服务器教程">
 <meta name="twitter:description" content="在群晖服务器上搭建Minecraft基岩版服务器。">
-<meta name="twitter:image" content="http://oneindex.laoliu.evai.pl/?/image/MC_server/1.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Lao_Liu Blog" type="application/atom+xml">
   
@@ -186,7 +186,7 @@
 
 <h4 id="1-Docker映像（image）的选择"><a href="#1-Docker映像（image）的选择" class="headerlink" title="1.Docker映像（image）的选择"></a>1.Docker映像（image）的选择</h4><p>在尝试过5款映像后，Lao_Liu决定使用基于<strong>官方服务器端软件</strong>制作的这一款docker映像。</p>
 <p><a href="https://hub.docker.com/r/toasterlint/minecraft_bedrock/" rel="external nofollow noopener noreferrer" target="_blank">toasterlint-minecraft_bedrock</a></p>
-<p><img src="http://oneindex.laoliu.evai.pl/?/image/MC_server/1.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/1.png" alt></p>
 <p><strong>为什么我挑选了这款映像？</strong></p>
 <ul>
 <li>官方映像拥有<strong>所有原版特性</strong>；</li>
@@ -194,22 +194,22 @@
 <li>官方映像有<strong>完整的生物系统</strong>！（必须要提出来说）。</li>
 </ul>
 <hr>
-<h4 id="2-映像的使用"><a href="#2-映像的使用" class="headerlink" title="2.映像的使用"></a>2.映像的使用</h4><p><img src="http://oneindex.laoliu.evai.pl/?/image/MC_server/2.png" alt></p>
+<h4 id="2-映像的使用"><a href="#2-映像的使用" class="headerlink" title="2.映像的使用"></a>2.映像的使用</h4><p><img src="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/2.png" alt></p>
 <p>在 <strong>注册表</strong> 页面下载好映像之后，你会在 <strong>映像</strong> 页面发现它。双击映像，进入开启前的设置页面。</p>
 <hr>
-<p><img src="http://oneindex.laoliu.evai.pl/?/image/MC_server/3.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/3.png" alt></p>
 <p>（这个页面会有些许不同，“启用自动重新启动”以及接下来的设置位于 <strong>高级设置</strong> 中）</p>
 <p> 这里我勾选了“启用资源限制”来防止docker占用过多内存。但经过长时间的使用后Lao_Liu发现完全不需要有顾虑，这个docker最多占用500mb内存。</p>
 <p>“启用自动重新启动”可以勾选，在docker遇到问题被关闭时会自动尝试再次开启。</p>
 <hr>
-<p><img src="http://oneindex.laoliu.evai.pl/?/image/MC_server/4.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/4.png" alt></p>
 <p>在“卷”设置中，我们选择<strong>“添加文件夹”</strong>，并在喜欢的位置新建一个文件夹来保存MC服务器的配置文件与<strong>更加重要的地图数据</strong>。</p>
 <p>然后在<strong>”装载路径“</strong>处输入：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/data</span><br></pre></td></tr></table></figure>
 
 <p>这样我们就将NAS上的一个文件夹装载进docker的 /data 路径下，服务器产生的数据就会保存在本地硬盘，不会因为docker的关闭而丢失（像内存断电一样），同时也方便我们进行备份。</p>
 <hr>
-<p><img src="http://oneindex.laoliu.evai.pl/?/image/MC_server/5.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Lao-Liu233/blog_imgs/MC_server/5.png" alt></p>
 <p>在“端口设置”中，按照图中所示<strong>添加19132端口的TCP与UDP通道</strong>。在路由器处配置<strong>19132的端口转发</strong>（记得要同时转发TCP和UDP哦，游戏通讯是有用到UDP的），就能在外网访问MC服务器了。</p>
 <hr>
 <p>以上就是使用群晖搭建MC基岩版服务器的教程。很简单吧）</p>
