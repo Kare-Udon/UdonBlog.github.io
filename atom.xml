@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.laoliu.icu/"/>
-  <updated>2020-01-06T12:23:17.723Z</updated>
+  <updated>2020-02-20T05:44:07.201Z</updated>
   <id>https://blog.laoliu.icu/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BGP初体验-Linux,Openwrt与Quagga</title>
+    <link href="https://blog.laoliu.icu/archives/e3c95af8.html"/>
+    <id>https://blog.laoliu.icu/archives/e3c95af8.html</id>
+    <published>2020-02-10T04:30:00.000Z</published>
+    <updated>2020-02-20T05:44:07.201Z</updated>
+    
+    <summary type="html">
+    
+      Lao_Liu的BGP初体验。
+    
+    </summary>
+    
+    
+      <category term="教程" scheme="https://blog.laoliu.icu/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>Joplin+Webdav同步问题的解决方案</title>
